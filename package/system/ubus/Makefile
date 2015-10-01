@@ -5,9 +5,9 @@ PKG_VERSION:=2015-07-07
 PKG_RELEASE=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=http://git.openwrt.org/project/ubus.git
+PKG_SOURCE_URL:=https://github.com/mkschreder/juci-ubus.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=7ec9b8dec77b969bfc860995f96fe91fd40ba5e4
+PKG_SOURCE_VERSION:=f361bfa5fcb2daadf3b160583ce665024f8d108e
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_MIRROR_MD5SUM:=
 CMAKE_INSTALL:=1
@@ -15,7 +15,7 @@ CMAKE_INSTALL:=1
 PKG_LICENSE:=LGPL-2.1
 PKG_LICENSE_FILES:=
 
-PKG_MAINTAINER:=Felix Fietkau <nbd@openwrt.org>
+PKG_MAINTAINER:=Martin K. Schröder <mkschreder.uk@gmail.com>
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/cmake.mk
