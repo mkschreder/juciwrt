@@ -13,4 +13,4 @@ src-git targets https://github.com/openwrt/targets.git
 #src-svn xfce svn://svn.openwrt.org/openwrt/feeds/xfce
 #src-svn lxde svn://svn.openwrt.org/openwrt/feeds/lxde
 #src-link custom /usr/src/openwrt/custom-feed
-src-git juci https://github.com/mkschreder/mks-openwrt-feed.git
+src-git juci https://github.com/mkschreder/mks-openwrt-feed.git;devel
