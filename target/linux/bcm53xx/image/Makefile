@@ -41,6 +41,16 @@ define Build/trx-serial
 		-f $(KDIR)/root.squashfs -a 0x10000 -A $(KDIR)/fs_mark
 endef
 
+# -m 33554432 
+define Build/trx-smartrg
+	$(STAGING_DIR_HOST)/bin/trx \
+		-o $@ \
+		-m 268435456 \
+		-f $(word 1,$^) -a 1024 \
+		-f $(KDIR)/root.squashfs -a 0x10000 -A $(KDIR)/fs_mark
+endef
+
+
 define Build/trx-nand
 	# kernel: always use 4 MiB (-28 B or TRX header) to allow upgrades even
 	#	  if it grows up between releases
@@ -130,7 +140,7 @@ endef
 
 define Device/smartrg-sr400ac
   IMAGES := trx
-  IMAGE/trx := trx-serial
+  IMAGE/trx := trx-smartrg
 endef
 
 TARGET_DEVICES += \
