@@ -1,0 +1,3 @@
+/etc/init.d/rpcd enable
+/etc/init.d/ubus-scriptd enable
+/etc/init.d/uhttpd enable

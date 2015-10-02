@@ -1,0 +1,4 @@
+
+/etc/init.d/uhttpd start
+
+exit 0
