@@ -1,6 +1,6 @@
 This branch of OpenWRT will build an openwrt system with the new JUCI WebGUI
 
-![Desktop](/media/screenshot.jpg?raw=true "JUCI Screenshot")
+![Desktop](https://github.com/mkschreder/juci/raw/master/media/screenshot.jpg?raw=true "JUCI Screenshot")
 
 Please use "make menuconfig" to configure your appreciated
 configuration for the toolchain and firmware.
